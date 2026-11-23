@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Базовые стили для страницы -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(38, 38, 38);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <!-- общий контейнер -->
+    <div class="main-container">
+
+        <!-- Блок -->
+        <div class="container" style="background-color: orange">пустой</div>
+
+        <!-- Блок -->
+        <div class="container">
+            <div class="button-close-smile">😊</div>
+            <div class="button-close-pink"></div>
+            <div class="button-close-green"></div>
+            <div class="button-close-red"></div>
+        </div>
+
+        <!-- Блок -->
+        <div class="container" style="background-color: blue;">пустой</div>
+    </div>
+    <style>
+        .main-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            position: relative;
+            width: 300px;
+            height: 500px;
+            margin: 20px;
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button-close-red,
+        .button-close-green,
+        .button-close-pink {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .button-close-red {
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            border-radius: 50%;
+        }
+
+        .button-close-green {
+            bottom: -50px;
+            left: -50px;
+            background-color: green;
+        }
+
+        .button-close-pink {
+            background-color: pink;
+            z-index: 1;
+        }
+
+        .button-close-smile {
+            font-size: 45px;
+            z-index: 2;
+        }
+    </style>
+
+</body>
+
+</html>
